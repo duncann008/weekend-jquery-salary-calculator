@@ -8,4 +8,5 @@ function onReady()  {
     console.log('JQ');
 }
 
-function
+let employees = [];
+

@@ -1,3 +1,8 @@
 body    {
-    background-color: aqua;
+    background-color: 
+}
+
+table, tr, td  {
+    border: 1px solid black;
+    border: collapse;
 }

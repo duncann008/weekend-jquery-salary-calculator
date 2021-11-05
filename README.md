@@ -11,4 +11,5 @@ We can delete an employee's information at any time.
 ### Steps I took
 
 1.  Frame my HTML.
-2.  Make a function
+2.  Add a little CSS to better visualize my HTML.
+3.  
