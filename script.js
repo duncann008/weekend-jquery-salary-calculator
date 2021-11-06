@@ -37,3 +37,11 @@ function submitEmployeeInfo()   {
 
     
 }
+
+
+function displayEmployees(thingToDisplay) {
+    
+    $('#table-of-employees').empty();
+
+    for ()
+}

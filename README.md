@@ -19,3 +19,7 @@ We can delete an employee's information at any time.
     D.  Tested pushing a new object into that array and logging the array.
     E.  Tested emptying the input fields afterwards.
 4.  Now I create another function that displays my employees array on the table.
+    A.  First I needed a place to put my new employee data rows without disturbing the data labels in the table header so I created a table body.
+    B.  Next I needed to target that body's id and empty it so as to not have repeating data when I push the new employees.
+    C.  Added a loop to go through our array and make a new variable with each object's properties displayed on separate rows in the html.
+    D.  Append those variables to the DOM.
