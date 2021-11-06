@@ -52,6 +52,7 @@ function displayEmployees(dataToDisplay) {
                 <td>${employee.id}</td>
                 <td>${employee.title}</td>
                 <td>${employee.annualSalary}</td>
+                <td><button id="delete-employee">Delete</button></td>
             </tr>
         `;
 
