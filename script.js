@@ -5,8 +5,12 @@ $(document).ready(onReady);
 
 
 function onReady()  {
-    console.log('JQ');
+    $('#submit').on('click', submitEmployeeInfo)
 }
 
 let employees = [];
 
+
+function submitEmployeeInfo()   {
+    console.log('clicked');
+}
