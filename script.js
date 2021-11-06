@@ -35,13 +35,26 @@ function submitEmployeeInfo()   {
     $('#title').val('');
     $('#annual-salary').val('');
 
-    
+    displayEmployees(employees);
 }
 
 
-function displayEmployees(thingToDisplay) {
+function displayEmployees(dataToDisplay) {
     
     $('#table-of-employees').empty();
 
-    for ()
+    for (let employee of dataToDisplay) {
+
+        let addTableRow = `
+            <tr>
+                <td>${employee.firstName}</td>
+                <td>${employee.lastName}</td>
+                <td>${employee.id}</td>
+                <td>${employee.title}</td>
+                <td>${employee.annualSalary}</td>
+            </tr>
+        `;
+
+        $('#table-of-employees').append(addTableRow);
+    }
 }
