@@ -51,9 +51,14 @@ We can delete an employee's information at any time.
     -  Added some small padding and margin fixes.
     -  Repositioned my Monthly Salary div.
     -  Stylized my H1. This style came to mind with accounting.
-    -
+    -  Added color to my table header.
+    -  Aligned my salaries to the right to match the example a bit better.
 
 #### Ideas I didn't get to:
 
 -   Checkboxes to delete multiple employees at once and give all their names in the confirm prompt.
--   
+-   Loop through an array of alerts to keep the user entertained or horrified.
+
+##### IF YOU'VE COME THIS FAR PLEASE TRY TO DELETE SOMEONE.
+
+I apologize to anyone that read or skimmed through this long-winded README. As I'm sure you could tell, this was my first time doing something like this and I started shortening or skipping steps the further I went along. Any and all advice is appreciated.

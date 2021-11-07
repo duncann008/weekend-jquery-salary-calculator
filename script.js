@@ -67,12 +67,16 @@ function displayEmployees(dataToDisplay) {
 
 
 function deleteEmployee() {
-    let okay = confirm("Are you sure you want to delete this employee?");
+    let okay = confirm("Are you sure? They might have a family.");
     if (okay === true)   {
     let index = $('#delete-button').index(this);
     employees.splice(index);
     $(this).closest('tr').remove();
     displayMonthlySalary();
+    alert("I can't believe you've done this.");
+    }
+    else{
+        alert("You've made the right decision.");
     }
 }
 
