@@ -33,3 +33,8 @@ We can delete an employee's information at any time.
     A.  First I thought it best to add the column to place my delete buttons.  Had to add a little CSS to stretch out my final column without a header for visualization.
     B.  Now I want to try appending a new button line into the next <tr> along with the employee's data. 
     C.  Confirmed there's a button appearing where I want it to.
+    D.  To make it delete I need a new function that deletes the <tr> associated with that button.
+    E.  I spliced the index from the array and removed the row from the table with the function.
+
+7.  For my final piece of functionality I built a function to calculate the monthly salary.
+    A.  

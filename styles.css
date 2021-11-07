@@ -2,7 +2,7 @@ body    {
     background-color: 
 }
 
-table, tr, td  {
+tr, td  {
     border: 1px solid black;
     border: collapse;
 }

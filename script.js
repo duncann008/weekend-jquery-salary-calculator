@@ -5,7 +5,9 @@ $(document).ready(onReady);
 
 
 function onReady()  {
+
     $('#submit').on('click', submitEmployeeInfo);
+    $('#table-of-employees').on('click', '#delete-button', deleteEmployee);
 }
 
 let employees = [];
@@ -52,10 +54,21 @@ function displayEmployees(dataToDisplay) {
                 <td>${employee.id}</td>
                 <td>${employee.title}</td>
                 <td>${employee.annualSalary}</td>
-                <td><button id="delete-employee">Delete</button></td>
+                <td><button id="delete-button">Delete</button></td>
             </tr>
         `;
 
         $('#table-of-employees').append(addTableRow);
+        
     }
 }
+
+
+
+function deleteEmployee() {
+    let index = $('#delete-button').index(this);
+    employees.splice(index);
+    $(this).closest('tr').remove();
+
+}
+
