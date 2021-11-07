@@ -49,7 +49,7 @@ function displayEmployees(dataToDisplay) {
 
         let cleanSalary = employee.annualSalary.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
         let addTableRow = `
-            <tr>
+            <tr id="employee">
                 <td>${employee.firstName}</td>
                 <td>${employee.lastName}</td>
                 <td>${employee.id}</td>
@@ -67,10 +67,13 @@ function displayEmployees(dataToDisplay) {
 
 
 function deleteEmployee() {
+    let okay = confirm("Are you sure you want to delete this employee?");
+    if (okay === true)   {
     let index = $('#delete-button').index(this);
     employees.splice(index);
     $(this).closest('tr').remove();
     displayMonthlySalary();
+    }
 }
 
 

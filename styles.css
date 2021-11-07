@@ -2,11 +2,24 @@ body    {
     background-color: 
 }
 
-tr, td  {
+table, th, td  {
     border: 1px solid black;
-    border: collapse;
+    border-collapse: collapse;
+}
+
+input  {
+    width: 16%;
+}
+
+#delete-button  {
+    margin: auto;
+    display: block;
 }
 
 td  {
     width: 16%;
+}
+
+#employee:hover {
+    background-color: gainsboro;
 }

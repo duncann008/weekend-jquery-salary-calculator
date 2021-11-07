@@ -42,5 +42,8 @@ We can delete an employee's information at any time.
     -  After seeing the values, I decided to create a new easier to read variable before I emptied and appended.  Converted my values into the style of our local currency and appended that.
     -  Realized I should do the same for my table.
 
-8.  Time to style!
-    
+8.  Mostly to see if I could, and because it seemed like a prudent decision for an actual employee datase, I added a confirmation request for deletion of employee. Also to impress my girlfriend.
+
+9.  Time to style!
+    -  Fixed the input fields' dimensions.
+    -  Added a hover background color for the employees' table.
