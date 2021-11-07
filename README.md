@@ -48,3 +48,5 @@ We can delete an employee's information at any time.
     -  Fixed the input fields' dimensions.
     -  Added a hover background color for the employees' table.
     -  Centered, added a hover, and styled my delete buttons.
+    -  Added some small padding and margin fixes.
+    -  Repositioned my Monthly Salary div.
