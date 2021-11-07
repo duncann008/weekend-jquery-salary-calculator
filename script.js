@@ -59,7 +59,7 @@ function displayEmployees(dataToDisplay) {
         `;
 
         $('#table-of-employees').append(addTableRow);
-        
+        displayMonthlySalary();
     }
 }
 
@@ -69,6 +69,25 @@ function deleteEmployee() {
     let index = $('#delete-button').index(this);
     employees.splice(index);
     $(this).closest('tr').remove();
-
+    displayMonthlySalary();
 }
 
+
+function calculateMonthlySalary(salariesToSum)  {
+
+    let sum = 0
+
+    for (let employee of salariesToSum) {
+        sum += employee.annualSalary;
+    }
+
+    return sum;
+}
+
+function displayMonthlySalary()  {
+
+    let monthlySalary = calculateMonthlySalary(employees) / 12;
+    let easierToRead = monthlySalary.toLocaleString('en-US', {style: 'currency', currency: 'USD'})
+    $('#monthly-salary').empty();
+    $('#monthly-salary').append(`Monthly Salary: ${easierToRead}`);
+}

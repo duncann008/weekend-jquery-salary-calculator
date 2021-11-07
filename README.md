@@ -36,5 +36,9 @@ We can delete an employee's information at any time.
     D.  To make it delete I need a new function that deletes the <tr> associated with that button.
     E.  I spliced the index from the array and removed the row from the table with the function.
 
-7.  For my final piece of functionality I built a function to calculate the monthly salary.
-    A.  
+7.  For my final pieces of functionality I built a function to calculate the monthly salary and a function to display that data in the div I made on the DOM.
+    A.  Built a function to return the sum of the annualSalary property of the employees array.
+    B.  For Matt's sake I created a second function to do the division required for monthly salaries, then empty a div and append the number I need.
+    C.  After seeing the values, I decided to create a new easier to read variable before I emptied and appended.  Converted my values into the style of our local currency and appended that.
+
+8.  Time to style!
