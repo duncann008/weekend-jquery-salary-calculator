@@ -40,6 +40,7 @@ We can delete an employee's information at any time.
     -  Built a function to return the sum of the annualSalary property of the employees array.
     -  For Matt's sake I created a second function to do the division required for monthly salaries, then empty a div and append the number I need.
     -  After seeing the values, I decided to create a new easier to read variable before I emptied and appended.  Converted my values into the style of our local currency and appended that.
+    -  Realized I should do the same for my table.
 
 8.  Time to style!
     

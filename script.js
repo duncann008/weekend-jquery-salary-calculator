@@ -47,13 +47,14 @@ function displayEmployees(dataToDisplay) {
 
     for (let employee of dataToDisplay) {
 
+        let cleanSalary = employee.annualSalary.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
         let addTableRow = `
             <tr>
                 <td>${employee.firstName}</td>
                 <td>${employee.lastName}</td>
                 <td>${employee.id}</td>
                 <td>${employee.title}</td>
-                <td>${employee.annualSalary}</td>
+                <td>${cleanSalary}</td>
                 <td><button id="delete-button">Delete</button></td>
             </tr>
         `;
