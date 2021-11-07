@@ -47,3 +47,4 @@ We can delete an employee's information at any time.
 9.  Time to style!
     -  Fixed the input fields' dimensions.
     -  Added a hover background color for the employees' table.
+    -  Centered, added a hover, and styled my delete buttons.

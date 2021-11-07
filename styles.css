@@ -1,10 +1,12 @@
-body    {
-    background-color: 
+body    { 
+    border: 1px solid black;
+    padding: 7px;
 }
 
 table, th, td  {
     border: 1px solid black;
     border-collapse: collapse;
+    padding: 5px;
 }
 
 input  {
@@ -14,6 +16,12 @@ input  {
 #delete-button  {
     margin: auto;
     display: block;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+#delete-button:hover  {
+    background-color: red;
 }
 
 td  {
