@@ -8,7 +8,7 @@ An input field that allows a user to add an employee to a table.
 That table holds employee information and calculates total monthly salary payouts.
 We can delete an employee's information at any time.
 
-### Steps I took
+### Steps I took:
 
 1.  Framed my HTML.  Needed a couple headers, body, table, and something to contain the Monthly Salary calculation for which I used a div.
 
@@ -38,7 +38,7 @@ We can delete an employee's information at any time.
 
 7.  For my final pieces of functionality I built a function to calculate the monthly salary and a function to display that data in the div I made on the DOM.
     -  Built a function to return the sum of the annualSalary property of the employees array.
-    -  For Matt's sake I created a second function to do the division required for monthly salaries, then empty a div and append the number I need.
+    -  For my instructor's sanity I created a second function to do the division required for monthly salaries, then empty a div and append the number I need.
     -  After seeing the values, I decided to create a new easier to read variable before I emptied and appended.  Converted my values into the style of our local currency and appended that.
     -  Realized I should do the same for my table.
 
@@ -50,3 +50,10 @@ We can delete an employee's information at any time.
     -  Centered, added a hover, and styled my delete buttons.
     -  Added some small padding and margin fixes.
     -  Repositioned my Monthly Salary div.
+    -  Stylized my H1. This style came to mind with accounting.
+    -
+
+#### Ideas I didn't get to:
+
+-   Checkboxes to delete multiple employees at once and give all their names in the confirm prompt.
+-   

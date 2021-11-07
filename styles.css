@@ -3,7 +3,22 @@ body    {
     padding: 7px;
 }
 
+h1  {
+    text-align: center;
+    background-color: #ac6748d5;
+    margin: 0%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 3.0em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2  {
+    
+}
+
 table, th, td  {
+    width: 100%;
     border: 1px solid black;
     border-collapse: collapse;
     padding: 5px;
@@ -16,6 +31,12 @@ input  {
 #submit   {
     margin-left: 10px;
     position: fixed;
+}
+
+#word-Employees   {
+    margin-top: 50px;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 #delete-button  {
