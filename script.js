@@ -20,9 +20,9 @@ function submitEmployeeInfo()   {
     let newEmployee = {
         firstName: $('#first-name').val(),
         lastName: $('#last-name').val(),
-        id: $('#ID').val(),
+        id: Number($('#ID').val()),
         title: $('#title').val(),
-        annualSalary: $('#annual-salary').val()
+        annualSalary: Number($('#annual-salary').val())
     }
 
     if(checkInputs(newEmployee)){
@@ -42,23 +42,23 @@ function submitEmployeeInfo()   {
 
 function checkInputs(employee){
     if(employee.firstName === ''){
-        alert('1');
+        alert('Coach, is that you?');
         return false;
     }
     else if(employee.lastName === '')  {
-        alert('2');
+        alert('Mononyms are so hot right now.');
         return false;
     }
-    else if(employee.id === '')  {
-        alert('3');
+    else if(employee.id === 0)  {
+        alert("Well, I don't know the ID!");
         return false;
     }
     else if(employee.title === '')  {
-        alert('4');
+        alert('Yes, milord?');
         return false;
     }
-    else if(employee.annualSalary === '')   {
-        alert('5');
+    else if(employee.annualSalary === 0)   {
+        alert('Oh, an intern!');
         return false;
     }
     else {
@@ -134,4 +134,14 @@ function displayMonthlySalary()  {
     let easierToRead = monthlySalary.toLocaleString('en-US', {style: 'currency', currency: 'USD'})
     $('#monthly-salary').empty();
     $('#monthly-salary').append(`Monthly Salary: ${easierToRead}`);
+    checkMaxBudget(monthlySalary);
+}
+
+const maxBudget = 20000;
+function checkMaxBudget(monthly) {
+   if (monthly > maxBudget) {
+       $("#monthly-salary").css("color", "red");
+     } else {
+       $("#monthly-salary").css("color", "black");
+   }
 }
