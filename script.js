@@ -15,34 +15,70 @@ let employees = [];
 
 function submitEmployeeInfo()   {
 
-    let newFirstName = $('#first-name').val();
-    let newLastName = $('#last-name').val();
-    let newId = $('#ID').val();
-    let newTitle = $('#title').val();
-    let newAnnualSalary = $('#annual-salary').val();
+    
 
     let newEmployee = {
-        firstName: newFirstName,
-        lastName: newLastName,
-        id: Number(newId),
-        title: newTitle,
-        annualSalary: Number(newAnnualSalary)
+        firstName: $('#first-name').val(),
+        lastName: $('#last-name').val(),
+        id: $('#ID').val(),
+        title: $('#title').val(),
+        annualSalary: $('#annual-salary').val()
+    }
+
+    if(checkInputs(newEmployee)){
+        }
+    else {
+        return false;
     }
 
     employees.push(newEmployee);
-    
+
+    displayEmployees(employees);
+
+    clearInputs();
+}
+
+
+
+function checkInputs(employee){
+    if(employee.firstName === ''){
+        alert('1');
+        return false;
+    }
+    else if(employee.lastName === '')  {
+        alert('2');
+        return false;
+    }
+    else if(employee.id === '')  {
+        alert('3');
+        return false;
+    }
+    else if(employee.title === '')  {
+        alert('4');
+        return false;
+    }
+    else if(employee.annualSalary === '')   {
+        alert('5');
+        return false;
+    }
+    else {
+       alert("IT'S ALIVE!!!");
+       return true;
+   }
+}
+
+
+function clearInputs(){
     $('#first-name').val('');
     $('#last-name').val('');
     $('#ID').val('');
     $('#title').val('');
     $('#annual-salary').val('');
-
-    displayEmployees(employees);
 }
 
 
 function displayEmployees(dataToDisplay) {
-    
+
     $('#table-of-employees').empty();
 
     for (let employee of dataToDisplay) {
